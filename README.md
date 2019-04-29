@@ -1,5 +1,6 @@
 # optimizer_test
 Test for Gurobi &amp; Cplex
+Cplex版本1.2.8，Gurobi版本：8.1
 
 请在相应目录（如cplex_test/）下直接输入make run运行程序
 可在Makefile中修改相应参数，包括：
