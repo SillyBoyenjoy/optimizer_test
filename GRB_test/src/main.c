@@ -4,7 +4,6 @@
 * --------------------------------------------------------------------------
 * Author: Liu Chong
 * ExLibrary: 
-* Run example: text -4 BenchmarkSets
 * --------------------------------------------------------------------------
 */
 #include "main.h"
@@ -18,10 +17,10 @@ int main (int argc,
 	double  objval = 0, refval = 0, GapVal = 0.001;
 	double	s_time = 0, e_time = 0, d_time = 0, t_time = 0.0, time_limit = 600.0;
 
-	char    logfile[MAXFILENAME] = "./log/Gurobi_log", openfile[MAXFILENAME] = {0}, solfile[MAXFILENAME] = {0};
+	char    logfile[MAXFILENAME] = "./log/Gurobi_log", SetName[MAXFILENAME] = "../";
+    char    solfile[MAXFILENAME] = {0}, openfile[MAXFILENAME] = {0};
 	char    path_e[MAXFILENAME] = "exs/", path_r[MAXFILENAME] = "res/", path_f[MAXFILENAME] = "filies.txt";
 	char    filies[MAXFILIES][MAXFILENAME] = {0};
-    char    *SetName = NULL;
 
 	int		Threads = 0, f_screen = 0, f_log = 0, i;
 	int		s_status;
@@ -34,15 +33,15 @@ int main (int argc,
 		goto TERMINATE;
 	}
     
-    SetName = argv[1];
-    if ( (strncmp(SetName, "BenchmarkSets/", strlen("BenchmarkSets/")) != 0)    &&
-         (strncmp(SetName, "EasySets/", strlen("EasySets/")) != 0)              &&
-        (strncmp(SetName, "QPLIB/", strlen("QPLIB/")) != 0) ){
+    if ( (strncmp(argv[1], "BenchmarkSets/", strlen("BenchmarkSets/")) != 0)    &&
+         (strncmp(argv[1], "EasySets/", strlen("EasySets/")) != 0)              &&
+         (strncmp(argv[1], "QPLIB/", strlen("QPLIB/")) != 0) ){
             printf("Unknown sets.\n");
             goto TERMINATE;
         }
+    strcat(SetName, argv[1]);
     strcat(logfile, "_");
-    strncat(logfile, SetName, strlen(SetName)-1);
+    strncat(logfile, argv[1], strlen(argv[1])-1);
 
     for ( i = 2; i < argc; ++i ){
         if ( strncmp(argv[i], "-Threads=", strlen("-Threads=")) == 0 ){
