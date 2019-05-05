@@ -16,6 +16,7 @@
 #define LP   ".lp"
 #define MPS  ".mps"  
 #define SOL  ".sol"
+#define GZ   ".mps.gz"
 
 #define READ_CASE_FAIL 1
 #define CPLEX_OPT_FAIL 2

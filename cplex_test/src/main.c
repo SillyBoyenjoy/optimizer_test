@@ -181,7 +181,7 @@ int main (int argc, char *argv[]){
 	for(f_i = 0; f_i < f_n; f_i++){
 	/* Now read the file, and copy the data into the created mip */
         if ( tenv.prob == 0 ){
-            ExFilename(path_e, filies[f_i], MPS, openfile);
+            ExFilename(path_e, filies[f_i], GZ, openfile);
         }
         else{
             ExFilename(path_e, filies[f_i], LP, openfile);

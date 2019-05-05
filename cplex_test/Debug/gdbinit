@@ -1,0 +1,7 @@
+file ../bin/cplex_test
+break main
+break 86
+break 188
+break 215
+break GetFilename
+r ../../BenchmarkSets/ -Threads=4 -Screen=on -Log=on
