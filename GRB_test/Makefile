@@ -19,7 +19,7 @@ GRBINCDIR   = $(GRBDIR)/include
 SRCC          = ./src
 
 CFLAGS  = $(COPT)  -I$(GRBINCDIR)
-SETS    = BenchmarkSets/
+SETS    = EasySets/
 ARGVS   = $(SETS) \
 		  -Threads=4 \
 		  -Gap=0.01 \

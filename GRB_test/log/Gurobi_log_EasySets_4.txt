@@ -1,0 +1,101 @@
+
+*******************LogFile:  0*******************
+Case 30_70_45_095_100 is acceptted!
+Time consuming 4.267808 sec.
+*****************LogFileDetail*******************
+Read MPS format model from file ./../EasySets/exs/30_70_45_095_100.mps.gz
+Reading time = 0.22 seconds
+30_70_4.5_0.95_100: 12526 rows, 10976 columns, 46640 nonzeros
+Optimize a model with 12526 rows, 10976 columns and 46640 nonzeros
+Variable types: 1 continuous, 10975 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 6e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 3e+00]
+Found heuristic solution: objective 9743.0000000
+Found heuristic solution: objective 1152.0000000
+Presolve removed 23 rows and 17 columns
+Presolve time: 0.16s
+Presolved: 12503 rows, 10959 columns, 46579 nonzeros
+
+Warning: Thread count (4) is larger than core count (1)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 0 continuous, 10959 integer (10958 binary)
+
+Root relaxation: objective 3.000000e+00, 13544 iterations, 2.77 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+H    0     0                       3.0000000 -6132.0000      -     -    4s
+     0     0          -    0         3.00000    3.00000  0.00%     -    4s
+
+Explored 0 nodes (19851 simplex iterations) in 4.27 seconds
+Thread count was 4 (of 1 available processors)
+
+Solution count 3: 3 1152 9743 
+
+Optimal solution found (tolerance 1.00e-02)
+Best objective 3.000000000000e+00, best bound 3.000000000000e+00, gap 0.0000%
+
+*******************LogFile:  1*******************
+Case 30n20b8 is acceptted!
+Time consuming 7.922161 sec.
+*****************LogFileDetail*******************
+Read MPS format model from file ./../EasySets/exs/30n20b8.mps.gz
+Reading time = 0.40 seconds
+30n20b8: 576 rows, 18380 columns, 109706 nonzeros
+Optimize a model with 576 rows, 18380 columns and 109706 nonzeros
+Variable types: 0 continuous, 18380 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [5e+01, 1e+02]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 191 rows and 14202 columns
+Presolve time: 0.41s
+Presolved: 385 rows, 4178 columns, 35054 nonzeros
+
+Warning: Thread count (4) is larger than core count (1)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 0 continuous, 4178 integer (4131 binary)
+Found heuristic solution: objective 753.0000000
+
+Root relaxation: objective 3.020000e+02, 224 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  302.00000    0   76  753.00000  302.00000  59.9%     -    1s
+H    0     0                     653.0000000  302.00000  53.8%     -    1s
+     0     0  302.00000    0  114  653.00000  302.00000  53.8%     -    1s
+     0     0  302.00000    0  121  653.00000  302.00000  53.8%     -    2s
+     0     0  302.00000    0   66  653.00000  302.00000  53.8%     -    3s
+     0     0  302.00000    0   69  653.00000  302.00000  53.8%     -    3s
+     0     0  302.00000    0   46  653.00000  302.00000  53.8%     -    4s
+     0     2  302.00000    0   46  653.00000  302.00000  53.8%     -    5s
+H   33    25                     453.0000000  302.00000  33.3%  93.5    7s
+H   34    18                     302.0000000  302.00000  0.00%  90.7    7s
+
+Cutting planes:
+  Cover: 9
+  Implied bound: 7
+  Clique: 52
+  MIR: 73
+  StrongCG: 16
+  GUB cover: 28
+  Zero half: 2
+
+Explored 36 nodes (8195 simplex iterations) in 7.92 seconds
+Thread count was 4 (of 1 available processors)
+
+Solution count 4: 302 453 653 753 
+
+Optimal solution found (tolerance 1.00e-02)
+Best objective 3.020000000000e+02, best bound 3.020000000000e+02, gap 0.0000%
+
+*******************LogFile:  2*******************
+Case 50v-10 is failed! Time limit exceeded and the the solution is 3311.179984 while the objective valu
