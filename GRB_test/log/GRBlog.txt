@@ -1,0 +1,54 @@
+Read MPS format model from file ./../BenchmarkSets/exs/aflow40b.mps.gz
+Reading time = 0.02 seconds
+aflow40b: 1442 rows, 2728 columns, 6783 nonzeros
+Optimize a model with 1442 rows, 2728 columns and 6783 nonzeros
+Variable types: 1364 continuous, 1364 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+02]
+  Objective range  [1e+01, 5e+02]
+  Bounds range     [1e+00, 1e+02]
+  RHS range        [1e+00, 1e+01]
+Presolve removed 41 rows and 41 columns
+Presolve time: 0.06s
+Presolved: 1401 rows, 2687 columns, 6701 nonzeros
+
+Warning: Thread count (4) is larger than core count (1)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 1362 continuous, 1325 integer (1325 binary)
+
+Root relaxation: objective 1.005682e+03, 1979 iterations, 0.15 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1005.68164    0   36          - 1005.68164      -     -    0s
+H    0     0                    2924.0000000 1005.68164  65.6%     -    0s
+H    0     0                    2863.0000000 1005.68164  64.9%     -    0s
+H    0     0                    2270.0000000 1005.68164  55.7%     -    0s
+H    0     0                    1455.0000000 1005.68164  30.9%     -    0s
+     0     0 1042.80373    0   52 1455.00000 1042.80373  28.3%     -    0s
+H    0     0                    1338.0000000 1042.80373  22.1%     -    0s
+     0     0 1046.64720    0   60 1338.00000 1046.64720  21.8%     -    0s
+     0     0 1046.99424    0   58 1338.00000 1046.99424  21.7%     -    0s
+     0     0 1066.33812    0   72 1338.00000 1066.33812  20.3%     -    1s
+H    0     0                    1263.0000000 1066.33812  15.6%     -    1s
+     0     0 1067.72366    0   73 1263.00000 1067.72366  15.5%     -    1s
+     0     0 1067.86018    0   70 1263.00000 1067.86018  15.5%     -    1s
+     0     0 1067.86130    0   75 1263.00000 1067.86130  15.5%     -    1s
+     0     0 1074.46227    0   75 1263.00000 1074.46227  14.9%     -    1s
+     0     0 1074.46227    0   36 1263.00000 1074.46227  14.9%     -    1s
+H    0     0                    1248.0000000 1074.46227  13.9%     -    2s
+     0     0 1074.46227    0   60 1248.00000 1074.46227  13.9%     -    2s
+     0     0 1074.46227    0   67 1248.00000 1074.46227  13.9%     -    2s
+     0     0 1074.86824    0   67 1248.00000 1074.86824  13.9%     -    2s
+     0     0 1075.15857    0   82 1248.00000 1075.15857  13.8%     -    2s
+     0     0 1075.24222    0   72 1248.00000 1075.24222  13.8%     -    3s
+     0     0 1075.24272    0   76 1248.00000 1075.24272  13.8%     -    3s
+H    0     0                    1234.0000000 1075.24272  12.9%     -    3s
+     0     0 1079.57430    0   86 1234.00000 1079.57430  12.5%     -    3s
+     0     0 1081.98779    0   74 1234.00000 1081.98779  12.3%     -    3s
+     0     0 1083.51156    0   77 1234.00000 1083.51156  12.2%     -    3s
+     0     0 1083.68518    0   84 1234.00000 1083.68518  12.2%     -    3s
+     0     0 1083.73652    0   84 1234.00000 1083.73652  12.2%     -    3s
+     0     0 1086.66665    0   85 1234.00000 1086.66665  11.9%     -    4s

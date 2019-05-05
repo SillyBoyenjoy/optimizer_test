@@ -23,7 +23,7 @@ SETS    = BenchmarkSets/
 ARGVS   = $(SETS) \
 		  -Threads=4 \
 		  -Gap=0.01 \
-		  -Screen=on \
+		  -Screen=off \
 		  -Log=on
 
 

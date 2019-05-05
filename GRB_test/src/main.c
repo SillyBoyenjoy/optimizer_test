@@ -176,6 +176,13 @@ int main (int argc,
 		goto TERMINATE;
 	}
 
+    /* Clean the GRBlog */
+    FILE *tempfile;
+    if ( (tempfile=fopen("./log/GRBlog.txt", "w+")) == NULL ){
+        printf("Cannot open file GRBlog.txt\n");
+        return 0;
+    }
+
 	for(f_i = 0; f_i < f_n; f_i++){
 	/* Now read the file, and copy the data into the created mip */
         if ( tenv.prob == 0 ){
